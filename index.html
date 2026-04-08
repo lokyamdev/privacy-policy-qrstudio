@@ -1,198 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QRHistory Privacy Policy</title>
-    <style>
-        :root {
-            color-scheme: light dark;
-            --bg: #f3f7fb;
-            --surface: rgba(255, 255, 255, 0.88);
-            --surface-border: rgba(17, 24, 39, 0.08);
-            --text: #132330;
-            --muted: #526273;
-            --accent: #0f8b8d;
-            --accent-soft: rgba(15, 139, 141, 0.12);
-            --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg: #091218;
-                --surface: rgba(17, 27, 35, 0.9);
-                --surface-border: rgba(255, 255, 255, 0.08);
-                --text: #f3f7fb;
-                --muted: #b3c0cb;
-                --accent: #4fd3cb;
-                --accent-soft: rgba(79, 211, 203, 0.16);
-                --shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
-            }
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
-            background:
-                radial-gradient(circle at top left, rgba(37, 210, 203, 0.18), transparent 32%),
-                radial-gradient(circle at top right, rgba(47, 85, 241, 0.16), transparent 28%),
-                var(--bg);
-            color: var(--text);
-            line-height: 1.65;
-        }
-
-        .page {
-            width: min(860px, calc(100% - 32px));
-            margin: 48px auto;
-        }
-
-        .card {
-            background: var(--surface);
-            border: 1px solid var(--surface-border);
-            border-radius: 28px;
-            box-shadow: var(--shadow);
-            backdrop-filter: blur(14px);
-            overflow: hidden;
-        }
-
-        .hero {
-            padding: 32px 32px 24px;
-            background:
-                linear-gradient(135deg, rgba(37, 210, 203, 0.16), rgba(47, 85, 241, 0.14));
-            border-bottom: 1px solid var(--surface-border);
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 8px 14px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            color: var(--accent);
-            font-size: 0.9rem;
-            font-weight: 700;
-            letter-spacing: 0.02em;
-        }
-
-        h1 {
-            margin: 18px 0 12px;
-            font-size: clamp(2rem, 4vw, 3rem);
-            line-height: 1.1;
-        }
-
-        .subtitle {
-            margin: 0;
-            color: var(--muted);
-            font-size: 1.05rem;
-            max-width: 42rem;
-        }
-
-        .content {
-            padding: 28px 32px 36px;
-        }
-
-        section + section {
-            margin-top: 28px;
-        }
-
-        h2 {
-            margin: 0 0 12px;
-            font-size: 1.25rem;
-        }
-
-        p {
-            margin: 0;
-        }
-
-        ul {
-            margin: 12px 0 0;
-            padding-left: 22px;
-        }
-
-        li + li {
-            margin-top: 8px;
-        }
-
-        .note {
-            margin-top: 14px;
-            padding: 14px 16px;
-            border-radius: 18px;
-            background: var(--accent-soft);
-            color: var(--text);
-        }
-
-        .footer {
-            margin-top: 18px;
-            color: var(--muted);
-            font-size: 0.95rem;
-        }
-
-        @media (max-width: 640px) {
-            .page {
-                width: min(100% - 20px, 860px);
-                margin: 20px auto;
-            }
-
-            .hero,
-            .content {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Studio — Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+      padding: 0 16px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+    .header {
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .app-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: #5B4BC4;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .last-updated {
+      font-size: 14px;
+      color: #666;
+    }
+    .intro {
+      background: #f5f3ff;
+      border-left: 4px solid #5B4BC4;
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: #3d3d3d;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 36px 0 12px;
+    }
+    p {
+      margin-bottom: 14px;
+      color: #3d3d3d;
+    }
+    ul {
+      margin: 8px 0 16px 20px;
+      color: #3d3d3d;
+    }
+    ul li {
+      margin-bottom: 6px;
+    }
+    .section {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #5B4BC4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-box {
+      background: #f9f9f9;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+    .contact-box h2 {
+      margin-top: 0;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #e5e5e5;
+      font-size: 13px;
+      color: #999;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <main class="page">
-        <article class="card">
-            <header class="hero">
-                <div class="badge">QRHistory</div>
-                <h1>Privacy Policy</h1>
-                <p class="subtitle">
-                    QRHistory is designed to work locally on your device and keep your scan history private.
-                </p>
-            </header>
+  <div class="container">
 
-            <div class="content">
-                <section>
-                    <h2>Data Handling</h2>
-                    <ul>
-                        <li>QRHistory stores scan history only on your device.</li>
-                        <li>QRHistory does not require an account.</li>
-                        <li>QRHistory does not upload scan history to a backend server.</li>
-                        <li>QRHistory does not provide cloud sync.</li>
-                        <li>QRHistory does not include analytics in the current release build.</li>
-                    </ul>
-                </section>
+    <div class="header">
+      <div class="app-name">QR Studio</div>
+      <h1>Privacy Policy</h1>
+      <div class="last-updated">Last updated: April 7, 2026</div>
+    </div>
 
-                <section>
-                    <h2>Permissions</h2>
-                    <ul>
-                        <li>Camera: used to scan QR codes.</li>
-                        <li>Vibration: used to give short feedback after a successful scan.</li>
-                    </ul>
-                </section>
+    <div class="intro">
+      This policy explains what information QR Studio collects, how it is used, and the choices you have. We built this app to respect your privacy — we collect only what is necessary to provide the service. We do not sell your data, show ads, or share your information with third parties beyond what is described here.
+    </div>
 
-                <section>
-                    <h2>Data Sharing</h2>
-                    <ul>
-                        <li>QRHistory does not sell or share personal data.</li>
-                        <li>When you tap actions like open in browser, email, SMS, maps, share, or dial, Android hands the content to the app you selected.</li>
-                    </ul>
-                </section>
+    <div class="section">
+      <h2>1. Who we are</h2>
+      <p>QR Studio is an Android application that allows users to generate, manage, and track QR codes. The app is developed and maintained by Yunior ("we", "us", or "our"). If you have any questions about this policy, contact us at the email address listed at the bottom of this page.</p>
+    </div>
 
-                <section>
-                    <h2>Contact</h2>
-                    <p>
-                       lokyam.dev@gmail.com
-                    </p>
-                </section>
+    <div class="section">
+      <h2>2. Information we collect</h2>
 
-                <p class="footer">Last updated: April 3, 2026</p>
-            </div>
-        </article>
-    </main>
+      <p><strong>Account information (only when you sign in)</strong></p>
+      <p>Signing in is optional. If you choose to sign in with Google, we receive your name and email address from Google. We use this solely to create and identify your account. We do not access your Google profile picture or any other Google account data.</p>
+
+      <p><strong>QR code data</strong></p>
+      <p>When you create a QR code, we store the following locally on your device and, if you are signed in, in our cloud database:</p>
+      <ul>
+        <li>The content you enter (URLs, text, Wi-Fi credentials, contact information, etc.).</li>
+        <li>The name and type you assign to the QR code.</li>
+        <li>The creation date and time.</li>
+        <li>The visual design settings you choose (colors, patterns, logo).</li>
+        <li>For dynamic QR codes: the redirect URL you configure.</li>
+      </ul>
+      <p>Static QR codes are stored only on your device. Dynamic QR codes are also synced to our cloud servers so that redirect URLs can be managed remotely.</p>
+
+      <p><strong>Scan analytics (dynamic QR codes, Pro plan only)</strong></p>
+      <p>When someone scans one of your dynamic QR codes, our server records:</p>
+      <ul>
+        <li>The date and time of the scan.</li>
+        <li>The approximate country of the person scanning (derived from their IP address — the IP address itself is not stored).</li>
+        <li>The device type of the scanner (Android, iOS, or desktop).</li>
+      </ul>
+      <p>People who scan your QR codes do not need to have QR Studio installed. By sharing a dynamic QR code publicly, you acknowledge that scan data will be collected for analytics purposes.</p>
+
+      <p><strong>Device identifier</strong></p>
+      <p>The app generates a random identifier (UUID) the first time it is launched and stores it on your device. This identifier is attached to QR codes you create and is used to associate static QR codes with the device that created them, so they appear correctly on the same device across sessions. This identifier is not tied to your Google account or any other personal information, and we do not use it to track you across apps or websites.</p>
+
+      <p><strong>Subscription status</strong></p>
+      <p>To determine whether you have an active Pro subscription, the app queries Google Play. The result is cached locally on your device so that Pro features remain accessible when you are offline. This cache is cleared when you sign out.</p>
+
+      <p><strong>Information we do not collect</strong></p>
+      <ul>
+        <li>We do not collect precise location data.</li>
+        <li>We do not collect payment information — payments are processed entirely by Google Play.</li>
+        <li>We do not use advertising SDKs or show ads of any kind.</li>
+        <li>We do not collect crash reports or usage analytics beyond what is described in this policy.</li>
+        <li>We do not sell, rent, or share your personal data with third parties for commercial purposes.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. How we use your information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Create and maintain your account.</li>
+        <li>Store and sync your QR codes across sessions and devices (when signed in).</li>
+        <li>Enable dynamic QR code redirect functionality.</li>
+        <li>Provide scan analytics for your dynamic QR codes (Pro plan).</li>
+        <li>Verify and manage your subscription status via Google Play Billing.</li>
+        <li>Respond to your support requests.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>4. Local storage</h2>
+      <p>QR Studio stores the following data locally on your device:</p>
+      <ul>
+        <li><strong>QR code database:</strong> A local database containing your QR code metadata and design settings. This allows the app to work offline.</li>
+        <li><strong>QR code images:</strong> Generated QR code images saved in the app's private storage.</li>
+        <li><strong>Device identifier:</strong> The random UUID described in Section 2, stored in the app's private preferences.</li>
+        <li><strong>Subscription cache:</strong> A local copy of your Pro subscription status, cleared on sign-out.</li>
+        <li><strong>App preferences:</strong> Settings such as your chosen color theme.</li>
+      </ul>
+      <p>This data is stored in the app's private storage and is not accessible to other apps on your device.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Cloud storage and security</h2>
+      <p>When you are signed in, your QR code data and images are stored in Supabase, a cloud database and storage platform. Data is protected using industry-standard encryption in transit (TLS) and at rest. Access to your data is enforced by Row Level Security — your QR codes and analytics are only accessible by your account and cannot be read by other users.</p>
+      <p>Static QR codes are stored locally only and are not uploaded to our servers. Dynamic QR codes are uploaded to the cloud to enable remote redirect management and scan analytics.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Third-party services</h2>
+      <p>QR Studio uses the following third-party services, each governed by their own privacy policies:</p>
+      <ul>
+        <li><strong>Google Sign-In</strong> — for account authentication. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+        <li><strong>Supabase</strong> — for cloud database, file storage, and backend services. <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a></li>
+        <li><strong>Google Play Billing</strong> — for subscription purchases and verification. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+      </ul>
+      <p>We do not integrate any advertising networks, analytics SDKs, or crash-reporting services.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Account deletion and data retention</h2>
+      <p>You can delete your account at any time from within the app (Settings → Delete account). When you delete your account:</p>
+      <ul>
+        <li>All your dynamic QR codes and their images are permanently deleted from our servers immediately.</li>
+        <li>All scan analytics associated with your dynamic QR codes are permanently deleted.</li>
+        <li>Your account credentials are removed from our authentication service.</li>
+        <li>Your Pro subscription cache is cleared from your device.</li>
+      </ul>
+      <p>Static QR codes are stored locally only and are not deleted from your device when you delete your account, since they have no cloud backup. You can delete them manually within the app.</p>
+      <p>Your Google Play subscription is not automatically cancelled when you delete your account. You must cancel it separately through the Google Play Store to avoid future charges.</p>
+      <p>If you do not delete your account, we retain your data for as long as your account remains active.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Children's privacy</h2>
+      <p>QR Studio is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Your rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li><strong>Access</strong> the personal data we hold about you by contacting us.</li>
+        <li><strong>Delete</strong> your account and all associated cloud data at any time from within the app settings.</li>
+        <li><strong>Export</strong> your QR code data by contacting us.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at the email address below.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Changes to this policy</h2>
+      <p>We may update this privacy policy from time to time. When we do, we will update the "last updated" date at the top of this page. For significant changes, we will notify you through the app. Continued use of QR Studio after changes constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <div class="contact-box">
+      <h2>11. Contact us</h2>
+      <p>If you have any questions, concerns, or requests regarding this privacy policy or your personal data, please contact us:</p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:lokyam.dev@gmail.com">lokyam.dev@gmail.com</a><br>
+        <strong>App:</strong> QR Studio for Android<br>
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2026 QR Studio. All rights reserved.
+    </footer>
+
+  </div>
 </body>
 </html>
