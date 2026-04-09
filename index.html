@@ -105,7 +105,7 @@
     <div class="header">
       <div class="app-name">QR Studio</div>
       <h1>Privacy Policy</h1>
-      <div class="last-updated">Last updated: April 7, 2026</div>
+      <div class="last-updated">Last updated: April 9, 2026</div>
     </div>
 
     <div class="intro">
@@ -130,6 +130,8 @@
         <li>The name and type you assign to the QR code.</li>
         <li>The creation date and time.</li>
         <li>The visual design settings you choose (colors, patterns, logo).</li>
+        <li>Library metadata you choose, such as favorites, tags, and archive state.</li>
+        <li>Saved style presets and export defaults you choose to store in the app.</li>
         <li>For dynamic QR codes: the redirect URL you configure.</li>
       </ul>
       <p>Static QR codes are stored only on your device. Dynamic QR codes are also synced to our cloud servers so that redirect URLs can be managed remotely.</p>
@@ -178,11 +180,13 @@
       <ul>
         <li><strong>QR code database:</strong> A local database containing your QR code metadata and design settings. This allows the app to work offline.</li>
         <li><strong>QR code images:</strong> Generated QR code images saved in the app's private storage.</li>
+        <li><strong>Saved styles and library metadata:</strong> Favorites, tags, archive state, and saved style presets stored for organization and reuse.</li>
         <li><strong>Device identifier:</strong> The random UUID described in Section 2, stored in the app's private preferences.</li>
         <li><strong>Subscription cache:</strong> A local copy of your Pro subscription status, cleared on sign-out.</li>
         <li><strong>App preferences:</strong> Settings such as your chosen color theme.</li>
       </ul>
-      <p>This data is stored in the app's private storage and is not accessible to other apps on your device.</p>
+      <p>If you explicitly export or share a QR code, the exported file may be written to your Downloads or Pictures library or shared with another app you choose. Those exported copies are controlled by you and are not automatically removed if you later delete your account.</p>
+      <p>This data is stored in the app's private storage and is not accessible to other apps on your device unless you choose to export or share it.</p>
     </div>
 
     <div class="section">
@@ -203,8 +207,10 @@
     </div>
 
     <div class="section">
-      <h2>7. Account deletion and data retention</h2>
-      <p>You can delete your account at any time from within the app (Settings → Delete account). When you delete your account:</p>
+      <h2 id="account-deletion">7. Account deletion and data retention</h2>
+      <p>You can delete your account at any time from within the app (Settings → Delete account).</p>
+      <p>If you cannot access the app, you can request deletion by emailing <a href="mailto:lokyam.dev@gmail.com?subject=Delete%20QR%20Studio%20account">lokyam.dev@gmail.com</a> from the email address associated with your QR Studio account, or by clearly identifying that email in your request.</p>
+      <p>When you delete your account:</p>
       <ul>
         <li>All your dynamic QR codes and their images are permanently deleted from our servers immediately.</li>
         <li>All scan analytics associated with your dynamic QR codes are permanently deleted.</li>
